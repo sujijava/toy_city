@@ -13,7 +13,6 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Repository;
 
-import ca.sheridancollege.beans.Book;
 import ca.sheridancollege.beans.Toy;
 import ca.sheridancollege.beans.User;
 
