@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Add Toy</title>
+      
+      
+</head>
+
+<body>
+
+<div sec:authorize="isAuthenticated()">
+	User Name:<span sec:authentication="name"></span>
+	<br>
+	Roles: <span sec:authentication="principal.authorities"></span>
+	<br>
+	<form th:action="@{/logout}" method="post">
+	<input type="submit" value="logout">
+	</form>
+</div>
+
+
+<h1>Add Toy</h1>
+
+<form action="#" th:action="@{/worker/boss/modify}" th:object="${toy}">
+<input type="hidden" th:field="*{id}"/>
+Name: <input type="text" th:field="*{toy_name}"/><br/><br/>
+Price: <input type="text" th:field="*{toy_price}"/><br/><br/>
+Qty.: <input type="text" th:field="*{toy_qty}"/><br/><br/>
+
+<input type="submit" value="Add Toy"/>
+</form>
+<br/>
+<br><br><br><br><br>
+<hr>
+<a th:href="@{/}">HOME</a> <br/>
+<a th:href="@{/worker/boss/add}">ADD TOY</a> <br/>
+<a th:href="@{/login}">LOG INS</a> <br/>
+<a th:href="@{/view}">VIEW TOYS</a><br/>
+<a th:href="@{/register}">REGISTER</a> <br/>
+<a th:href="@{/worker/search}">SEARCH</a> <br/>
+<a th:href="@{/worker/email}">EMAIL</a><br/>
+<hr>
+<br>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+<div sec:authorize="isAuthenticated()">
+	User Name:<span sec:authentication="name"></span>
+	<br>
+	Roles: <span sec:authentication="principal.authorities"></span>
+	<br>
+	<form th:action="@{/logout}" method="post">
+	<input type="submit" value="logout">
+	</form>
+</div>
+
+
+<h1>You do not have permission to access this page</h1>
+
+<br><br><br><br><br>
+<hr>
+<a th:href="@{/}">HOME</a> <br/>
+<a th:href="@{/worker/boss/add}">ADD TOY</a> <br/>
+<a th:href="@{/login}">LOG INS</a> <br/>
+<a th:href="@{/view}">VIEW TOYS</a><br/>
+<a th:href="@{/register}">REGISTER</a> <br/>
+<a th:href="@{/worker/search}">SEARCH</a> <br/>
+<a th:href="@{/worker/email}">EMAIL</a><br/>
+<hr>
+<br>
+</body>
+</html>
