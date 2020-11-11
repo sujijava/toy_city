@@ -112,7 +112,7 @@ public class HomeController {
 		}
 
 		if (role.contains("worker")) {
-			da.addRole(userId, 2);
+			da.addRole(userId, 11);
 		}
 
 		return "redirect:/";
