@@ -6,3 +6,4 @@ This is a stock management application for a toy store. As a full stack java spr
 - Login: Log in and registration features are implemented using Java Spring and MySQL (ClearDB)
 2) Security: Permission control to access specific pages by user level
 4. Technology: #Java #SpringBoot #JavaSpring #MySQL #Bootstrap
+5. Deployed at: https://spring-toy-city.herokuapp.com/ 
