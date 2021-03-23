@@ -11,9 +11,9 @@ Source Code: https://github.com/sujijava/toy_city
 2. Login: Log in and registration features are implemented using Java Spring and MySQL (ClearDB)
 3. Security: Permission control to access specific pages by user level
 - Video about authorization
-<figure class="video_container">
-  <iframe src="https://youtu.be/0i_O4JsXEYE" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+
+# Video about Authorization 
+ https://youtu.be/0i_O4JsXEYE
 
 # Technology
 #Java #SpringBoot #JavaSpring #MySQL #Bootstrap
