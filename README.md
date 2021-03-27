@@ -13,7 +13,7 @@ Source Code: https://github.com/sujijava/toy_city
 - Video about authorization
 
 # Video about Authorization 
- https://youtu.be/0i_O4JsXEYE
+[![Watch the video](https://media-exp1.licdn.com/dms/image/sync/C4D27AQFDyAIe9Smxjw/articleshare-shrink_480/0/1615871823687?e=1616900400&v=beta&t=01wm-lIN2suUkgtPbjbWYX9UqZZParCwUro6qR2EgdY)](https://www.youtube.com/watch?v=0i_O4JsXEYE)
 
 # Technology
 #Java #SpringBoot #JavaSpring #MySQL #Bootstrap
